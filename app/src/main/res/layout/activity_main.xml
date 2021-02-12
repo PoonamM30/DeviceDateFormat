@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/calendarText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/calender_date"
+        android:textColor="@color/black"
+        android:layout_marginTop="@dimen/dp10"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <TextView
+        android:id="@+id/dateText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/formatted_date"
+        android:textColor="@color/black"
+        android:layout_marginTop="@dimen/dp10"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/calendarText" />
+
+    <TextView
+        android:id="@+id/timeText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/formatted_date"
+        android:textColor="@color/black"
+        android:layout_marginTop="@dimen/dp10"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dateText" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/formatButton1"
+        android:layout_width="98dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="@dimen/dp10"
+        android:background="@color/black"
+        android:text="@string/refresh"
+        android:textColor="@color/white"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/formatButton2"
+        app:layout_constraintTop_toBottomOf="@+id/timeText" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/formatButton2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp10"
+        android:text="@string/format2"
+        android:background="@color/black"
+        android:visibility="gone"
+        android:textColor="@color/white"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/formatButton1"
+        app:layout_constraintTop_toBottomOf="@+id/timeText" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

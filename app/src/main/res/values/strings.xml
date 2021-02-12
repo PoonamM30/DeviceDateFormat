@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">CalendarDemo</string>
+    <string name="calender_date">Calender Date: </string>
+    <string name="formatted_date">Formatted Date: </string>
+    <string name="format">Format</string>
+    <string name="format1">Format1</string>
+    <string name="format2">Format2</string>
+    <string name="refresh">Refresh</string>
+</resources>
